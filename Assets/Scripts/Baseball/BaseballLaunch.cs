@@ -11,16 +11,10 @@ public class BaseballLaunch : MonoBehaviour
 
     void Update()
     {
-        
-        
-        
         if(Input.GetMouseButtonDown(0))
         {
             var baseball = Instantiate(baseballPrefab, baseballSpawnPoint.position, baseballSpawnPoint.rotation);
             baseball.GetComponent<Rigidbody>().velocity = baseballSpawnPoint.forward * baseballSpeed;
         }
     }
-
-
-
 }
