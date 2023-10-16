@@ -10,7 +10,10 @@ public class BaseballFunctions : MonoBehaviour
     public GameObject singleTarget;
     public GameObject outArea;
 
-    //If Ball collides with arena collider, delete it for four seconds, make out annoncement appear for four seconds, resume.
+    //If Ball collides with target collider,
+    //delete it for four seconds,
+    //make out announcement appear for four seconds, resume.
+
     private void OnTriggerEnter(Collider other)
     {
         if (gameObject.tag == "Ball" + "Single")
