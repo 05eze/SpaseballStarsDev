@@ -10,13 +10,33 @@ public class BaseballFunctions : MonoBehaviour
     public GameObject singleTarget;
     public GameObject outArea;
 
-    //If Ball collides with arena collider, delete it for four seconds, make out annoncement appeaar for four seconds, resume.
-
-   /* private void OnTriggerEnter(Collider other)
+    //If Ball collides with arena collider, delete it for four seconds, make out annoncement appear for four seconds, resume.
+    private void OnTriggerEnter(Collider other)
     {
-        if(gameObject.tag == "Ball" +)
+        if (gameObject.tag == "Ball" + "Single")
         {
+            Debug.Log("Single!");
+            HideAndShow(4.0f); //4 seconds hidden
 
         }
-    }*/
+    }
+
+    //Hide object
+    private void HideAndShow(float delay)
+    {
+        gameObject.SetActive(false);
+
+        //Show after the delay
+        Invoke(nameof(HideAndShow), delay);
+    }
+
+    //Show parameter 
+    private void Show()
+    {
+        gameObject.SetActive(true);
+    }    
+
+
+
+   
 }
