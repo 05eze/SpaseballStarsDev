@@ -1176,8 +1176,8 @@ MonoBehaviour:
   baseballSpawnPoint: {fileID: 2043986725}
   baseballPrefab: {fileID: 243310388}
   baseballSpeed: 19.4
-  spawnTime: 0
-  spawnDelay: 0
+  spawnTime: 60.85
+  spawnDelay: 63.04
   stopSpawning: 0
 --- !u!1 &527471494
 GameObject:
