@@ -8,13 +8,23 @@ public class BaseballLaunch : MonoBehaviour
     public Transform baseballSpawnPoint;
     public GameObject baseballPrefab;
     public float baseballSpeed;
+    public float spawnTime;
+    public float spawnDelay;
+    public bool stopSpawning = false;
+
+    void Start()
+    {
+        InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
+    }
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        var baseball = Instantiate(baseballPrefab, baseballSpawnPoint.position, baseballSpawnPoint.rotation);
+        baseball.GetComponent<Rigidbody>().velocity = baseballSpawnPoint.forward * baseballSpeed;
+        if(stopSpawning)
         {
-            var baseball = Instantiate(baseballPrefab, baseballSpawnPoint.position, baseballSpawnPoint.rotation);
-            baseball.GetComponent<Rigidbody>().velocity = baseballSpawnPoint.forward * baseballSpeed;
+            CancelInvoke("SpawnObject");
         }
+        
     }
 }

@@ -1153,7 +1153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522121279}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.1, y: 1.49, z: -354.12}
+  m_LocalPosition: {x: -0.07, y: 1.49, z: -354.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1176,6 +1176,9 @@ MonoBehaviour:
   baseballSpawnPoint: {fileID: 2043986725}
   baseballPrefab: {fileID: 243310388}
   baseballSpeed: 19.4
+  spawnTime: 0
+  spawnDelay: 0
+  stopSpawning: 0
 --- !u!1 &527471494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574156517}
   m_LocalRotation: {x: -0.00000005338508, y: 0.7071068, z: 0.7071067, w: -0.000000053385072}
-  m_LocalPosition: {x: 0.7318933, y: -9.245881, z: -18.651459}
+  m_LocalPosition: {x: 0.73, y: -9.25, z: -18.651459}
   m_LocalScale: {x: 2554.6, y: 2554.5994, z: 2554.5994}
   m_ConstrainProportionsScale: 0
   m_Children: []
