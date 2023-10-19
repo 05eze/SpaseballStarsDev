@@ -875,9 +875,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseballSpawnPoint: {fileID: 2043986725}
   baseballPrefab: {fileID: 3609210340681341553, guid: 536403130b555464cb238c52d56d6d4f, type: 3}
-  baseballSpeed: 1
-  spawnTime: 600000000
-  spawnDelay: 630000000
+  baseballSpeed: 4.62
+  spawnTime: 1
+  spawnDelay: 1
   stopSpawning: 1
   delayAndSpawnRate: 5
 --- !u!1 &527471494
