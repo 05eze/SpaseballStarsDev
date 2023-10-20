@@ -21,6 +21,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Stadium");
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 
 
 
