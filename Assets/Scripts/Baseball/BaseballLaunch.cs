@@ -11,8 +11,8 @@ public class BaseballLaunch : MonoBehaviour
     public float spawnTime;
     public float spawnDelay;
     public bool stopSpawning = false;
-    public float delayAndSpawnRate = 5;
-    float spawnRateCountdown;
+   // public float delayAndSpawnRate = 5;
+   // float spawnRateCountdown;
 
     /* void Start()
      {
